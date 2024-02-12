@@ -20,7 +20,7 @@ main {
    object-fit: cover;
 }
 
-.photo-grid div div div div {
+.grid-pic {
    padding-left: 0;
    padding-right: 0;
 }
@@ -48,5 +48,15 @@ main {
 }
 
 .modal-content {
-   color: black;
+   color: white;
+   background: #222;
+}
+
+.modal-title {
+   font-size: x-large;
+   color: white;
+}
+
+span {
+   color: rgb(255, 67, 67);
 }
