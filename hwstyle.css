@@ -1,6 +1,10 @@
-main {
-   height: 100vh;
+html {
    background: black;
+   color: azure;
+}
+
+main {
+   background: #000;
 }
 
 .photo-grid {
@@ -18,6 +22,17 @@ main {
    max-width: none;
    max-height: none;
    object-fit: cover;
+}
+
+.photo-grid a:hover {
+   cursor: default;
+}
+
+.photo-grid a:hover img {
+   width: 90%;
+   height: 90%;
+   transform: translate(5%, 5%);
+   transition: ease-in-out 250ms;
 }
 
 .grid-pic {
@@ -40,11 +55,25 @@ main {
    font-weight: 400;
    font-size: xx-large;
    margin-bottom: 30px;
+   color: #BAB
 }
 
 .sidebar a {
    text-decoration: none;
    color: white;
+}
+
+.sidebar a.selected {
+   text-decoration: underline;
+   color: #BBB;
+}
+
+.nav-links a:hover:before {
+   content: ">";
+}
+
+.social-media a:hover {
+   color: #444;
 }
 
 .modal-content {
@@ -58,5 +87,9 @@ main {
 }
 
 span {
-   color: rgb(255, 67, 67);
+   color: white;
+}
+
+h1 {
+   color: white;
 }
